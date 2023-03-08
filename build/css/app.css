@@ -366,3 +366,19 @@ h2 {
 h3 {
   font-size: 3.2rem;
 }
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+@media (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.header__logo {
+  width: 30rem;
+}
