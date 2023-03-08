@@ -508,3 +508,35 @@ h3 {
     width: 100%;
   }
 }
+
+.pasos {
+  margin-top: 5rem;
+}
+.pasos__header {
+  color: #FFFFFF;
+  text-align: center;
+}
+.pasos__header span {
+  display: block;
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .pasos__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.pasos__contenido {
+  background-color: #e8505b;
+}
+.pasos__paso {
+  transition-duration: 0.5s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+.pasos__paso:hover {
+  -webkit-transform: rotate(-10deg) scale(1.1);
+          transform: rotate(-10deg) scale(1.1);
+}
