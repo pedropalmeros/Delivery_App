@@ -541,27 +541,48 @@ h3 {
           transform: rotate(-10deg) scale(1.1);
 }
 
-.card {
+.testimoniales {
+  padding: 5rem 0;
+}
+
+.testimonial {
+  background-color: #455a64;
   border-radius: 1rem;
   color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  margin: 2rem;
+  margin-bottom: 2rem;
   padding: 2rem;
 }
-.card__imagen {
-  border-radius: 50%;
-  height: 10rem;
-  width: 10rem;
+.testimonial:last-of-type {
+  margin-bottom: 0;
 }
-.card__header {
+.testimonial__header {
+  align-items: center;
   display: flex;
-  flex-direction: row;
   gap: 2rem;
-  margin-bottom: 2rem;
 }
-.card__usuario-valoracion {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+.testimonial__imagen {
+  border-radius: 50%;
+  flex-basis: 10rem;
+  overflow: hidden;
+}
+.testimonial__autor {
+  color: #FFFFFF;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.testimonial__texto {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 2rem 0 0 0;
+  padding-left: 4rem;
+  position: relative;
+}
+.testimonial__texto::before {
+  content: '"';
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 10rem;
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  top: -4rem;
 }
