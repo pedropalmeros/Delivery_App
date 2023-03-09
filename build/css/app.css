@@ -540,3 +540,28 @@ h3 {
   -webkit-transform: rotate(-10deg) scale(1.1);
           transform: rotate(-10deg) scale(1.1);
 }
+
+.card {
+  border-radius: 1rem;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+.card__imagen {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+.card__header {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.card__usuario-valoracion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
